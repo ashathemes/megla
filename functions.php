@@ -9,7 +9,7 @@
 
 if ( ! defined( 'MEGLA_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'MEGLA_VERSION', '1.0.0' );
+	define( 'MEGLA_VERSION', '1.0.1' );
 }
 
 if ( ! function_exists( 'megla_setup' ) ) :
@@ -164,6 +164,7 @@ function megla_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.5.0', 'all');
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '4.7.0', 'all');
 	wp_enqueue_style( 'slicknav', get_template_directory_uri() . '/assets/css/slicknav.min.css', array(), '1.0.3', 'all');
+	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'megla-default-block', get_template_directory_uri() . '/assets/css/default-block.css', array(), MEGLA_VERSION, 'all');
 	wp_enqueue_style( 'megla-style', get_template_directory_uri() . '/assets/css/megla-style.css', array(), '1.0.0', 'all');
 	wp_enqueue_style( 'megla-style', get_stylesheet_uri(), array(), MEGLA_VERSION );
